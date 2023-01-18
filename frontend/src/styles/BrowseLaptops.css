@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.library-container {
+    padding: 40px; 
+    font-family: 'Anek Malayalam', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.directory {
+    font-size: 24px;
+}
+
+#home:hover {
+    color: #f88119;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#parent:hover {
+    color: #f88119;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#child {
+    font-weight:bold;
+}
+
+.showing-items {
+    text-align: center; 
+    padding-top: 30px; 
+    font-size: 20px; 
+}
+
+.laptop-library {
+    display: flex; 
+    padding: 40px; 
+}
+.sidebar-filters {
+    flex-basis: 200px;
+    font-weight: 500; 
+}
+.category-links {
+    text-decoration: none; 
+
+}
+.filter-header{
+    font-size: 24px; 
+}
+.products{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-basis: 1200px; 
+    justify-content: center; 
+}
+
+.product-image {
+    width: 200px; 
+    height: 200px; 
+    margin-top: 20px;
+}
+.laptop-description {
+    font-size: 20px; 
+}
+.product {
+    flex-basis: 310px;
+    padding: 2px;
+    margin: 20px;
+    
+}
+.product-border { 
+    height: 370px;
+    width: 300px; 
+    border: solid; 
+    border-radius: 3px; 
+    border-color: #EF8121;
+    text-align: center;
+    padding-bottom: 10px; 
+}
+#add-to-cart {
+    border-radius: 50px;
+    border: transparent;  
+    background-color: #0C5178;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 20px; 
+    color: #FFFFFF;
+    font-weight: bold;  
+}
+.listing-bottom {
+    margin-top: 12px; 
+    padding: 10px 20px;
+    display: flex; 
+    justify-content: space-around;
+}
+#compare {
+    padding-right: 25px; 
+}
+.show-more {
+    text-align: center; 
+}
+.show-more > button {
+    width: 240px;
+    height: 38px;
+    font-family: 'Anek Malayalam', sans-serif;
+    border-radius: 10px;
+    border: 2.3px solid #EF8122;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+}

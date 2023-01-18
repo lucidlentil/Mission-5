@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.top-nav{
+    font-family: 'Anek Malayalam', sans-serif;
+    margin: 0px; 
+    height: 100%; 
+}
+.top-space {
+    background-color: #0B4F77;
+    height: 30px; 
+}
+.flex-container-1 {
+    list-style: none;
+    display: flex; 
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 18px 40px 5px 40px; 
+    background-color: black; 
+    color: white; 
+    font-size: 14px; 
+}
+.flex-container-1 > *:hover {
+    color: #EE8122; 
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.sub-nav {
+    background-color: #0B4F77;
+    color: white; 
+}
+.logo-block {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 50px; 
+}
+.nav-icons {
+    padding-top: 45px; 
+    padding-right: 20px;
+}
+#logo {
+    padding: 20px 0px;
+}
+.flex-container-2 {
+    display: flex; 
+    padding: 5px 40px 30px 40px;
+    justify-content: space-between; 
+}
+.current-location {
+    font-size: 50px; 
+    padding-left: 48px; 
+    position: relative; 
+    bottom: 15px; 
+}
+.flex-container-3 {
+    list-style: none; 
+    display: flex; 
+    gap: 3em; 
+    font-size: 19px;  
+    margin-bottom: 0px; 
+}
+.flex-container-3 > *:hover {
+    color: #EE8122;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.login {
+    padding-right: 20px; 
+}
+#user-icon {
+    color: white;  
+    vertical-align: middle; 
+    font-size: 24px;
+    padding-right: 5px;  
+}
+.icons {
+    vertical-align: middle; 
+    font-size: 24px; 
+}

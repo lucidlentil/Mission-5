@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.laptops-body {
+    background-color: #DDDEDF;
+    padding: 40px; 
+    font-family: 'Anek Malayalam', sans-serif;
+}
+#laptop-header {
+    font-size: 32px; 
+    text-align: center; 
+    padding-bottom: 40px; 
+}
+.card-block {
+    display: flex;
+    justify-content: space-between;
+}
+.help-block {
+    margin: 30px 0px; 
+    border: solid; 
+    border-radius: 7px; 
+    display: flex; 
+    padding: 40px 15px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+.flex-1 {
+    flex: 1; 
+    text-align: center; 
+}
+#help-header {
+    font-size: 28px;
+}
+#help-button {
+    font-size: 20px; 
+    padding: 10px; 
+    border-radius: 7px; 
+    border: solid;
+    margin-top: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #DDDEDF;
+}
+#help-button:hover {
+    color: #EE8122;
+    border-color: #EE8122;
+    transition: 0.2s ease; 
+    cursor: pointer; 
+} 
+.shop-by {
+    margin-top: 50px; 
+    text-align: center; 
+    font-size: 36px; 
+}
+.shop-category {
+    border: solid; 
+    display: inline-block; 
+    width: 270px;  
+    margin: 0px 20px;
+    padding: 40px 5px;  
+}

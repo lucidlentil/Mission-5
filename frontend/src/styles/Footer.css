@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.footer {
+    font-family: 'Anek Malayalam', sans-serif;
+    background-color: black;
+    color: white; 
+    padding: 40px 150px; 
+    display: flex; 
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    padding-right: 30px;
+}
+.footer-departments {
+    display: flex; 
+}
+.footer-flex-1, .footer-flex-2, .footer-flex-3, .footer-flex-4, .footer-flex-5 {
+    margin: 0px 8px;
+}
+li:hover {
+    color: #EE8122;
+    transition: 0.2s ease; 
+    cursor: pointer;
+}
+#insider-image:hover {
+    cursor: pointer; 
+}
