@@ -80,7 +80,7 @@ export default function Footer() {
                 </div>
                 <div className="footer-flex-5">
                     <div>Become a PB Insider</div>
-                    <img src="images/pb-insider.png" alt="PB insider" width="200px" id="insider-image"/>
+                    <img src="/images/pb-insider.png" alt="PB insider" width="200px" id="insider-image"/>
                 </div>
         </div>
     )
