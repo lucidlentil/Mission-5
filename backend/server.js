@@ -14,7 +14,7 @@ app.use(express.json());
 //connect to mongoose
 async function connect() {
     try {
-        await mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@mission5.ldjqjsm.mongodb.net/Mission5`);  
+        await mongoose.connect(`${process.env.MONGO_URI}`);  
         console.log("Connected to MongoDB"); 
     } catch (error) {
         console.error(error); 
@@ -58,11 +58,16 @@ const Laptop = mongoose.model("Laptop", laptopSchema);
 
 //routes
 app.get("/", (req,res) => {
-    Laptop.find({})
+    Laptop.find({}).limit(6)
     .then(laptops => res.json(laptops)
     ).catch(err => console.log(err));
 }); 
 
+app.get("/showmore", (req,res) => {
+    Laptop.find({})
+    .then(laptops => res.json(laptops)
+    ).catch(err => console.log(err));
+})
 
 app.get("/business", (req,res) => {
     Laptop.find({category:"Business"})

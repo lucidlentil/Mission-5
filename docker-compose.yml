@@ -1,33 +1,28 @@
-version: "3"
-services: 
-  react-app: 
-    image: react-app
-    stdin_open: true
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3001:5000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks: 
+      - mission-5
+    
+  frontend:
+    build: ./frontend
     ports: 
       - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
     networks: 
-
-      - mern-app
-  api-server: 
-    image: api-server
-    ports: 
-      - "8080:5000"
-    networks:
-      - mern-app
-    depends_on: 
-      - mongo 
-      
-  mongo: 
-    image: mongo
-    ports:
-      - "27017:27017"
-    networks: 
-      - mern-app
-    volumes: 
-      - mongo-data:/data/db
+      - mission-5
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    
 networks: 
-  mern-app: 
-    driver: bridge
-volumes: 
-  mongo-data:
-    driver: local
+  mission-5: 
+     driver: bridge

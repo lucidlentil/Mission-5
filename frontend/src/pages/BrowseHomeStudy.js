@@ -1,20 +1,20 @@
 import React, {useEffect, useState} from 'react'; 
+import {Link} from 'react-router-dom';
 
 import '../styles/BrowseLaptops.css';
 
 import TopNav from '../components/TopNav'; 
-import LocatorBar from '../components/LocatorBar'; 
 import Footer from '../components/Footer'; 
 
 import {RiScales3Fill} from 'react-icons/ri'
 
-export default function BrowseLaptops() {
+export default function BrowseHomeStudy() {
 
     const [laptopInfo, setLaptopInfo] = useState([]); 
     //const [filteredLaptopInfo, setFilteredLaptopInfo] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/")
+        fetch("http://localhost:3001/home&study")
         .then((res) => res.json())
         .then((jsonRes) => setLaptopInfo(jsonRes));
     }, []);
@@ -64,52 +64,21 @@ export default function BrowseLaptops() {
         filterLaptops(); 
     },[businessFilter, laptopInfo, homeStudyFilter]);
     */
-    function showAll(event) {
-        event.preventDefault(); 
-        fetch("http://localhost:3001/")
-        .then((res) => res.json())
-        .then((jsonRes) => setLaptopInfo(jsonRes));
-    };
-
-    function showBusiness(event) {
-        event.preventDefault();
-        fetch("http://localhost:3001/business")
-        .then((res) => res.json())
-        .then((jsonRes) => setLaptopInfo(jsonRes));
-    };
-
-    function showHomeStudy(event) {
-        event.preventDefault();
-        fetch("http://localhost:3001/home&study")
-        .then((res) => res.json())
-        .then((jsonRes) => setLaptopInfo(jsonRes));
-    };
 
     return (
         <div>
             <TopNav/>
+            <div className="buttons-bar"><Link to="/browse/all"><button className="category-buttons">ALL</button></Link> <Link to="/browse/business"><button className="category-buttons">BUSINESS</button></Link> <button className="category-button-current">HOME & STUDY</button></div>
             <div className="library-container">
                  <div className="directory">
-                    <span id="home">Home</span> > <span id="parent">Computers & Tablets</span> > <span id="child">Laptops</span>
+                    <span id="home">Home </span>&gt;<span id="parent"> Computers & Tablets </span>&gt;<span id="parent"> Laptops </span>&gt;<span className="child"> Home & Study</span>
                 </div>
-                <div className="showing-items">Displaying 1-10 of 10 products</div>
+                <div className="showing-items">Displaying 1-{laptopInfo.length} of 5 products</div>
             <div className="laptop-library">
                 <div className="sidebar-filters">
                     <span className="filter-header">FILTERS</span>
                     <hr/>
-                    <ul>
-                        <li>
-                            <a href="#" onClick={showAll} className="category-links">All laptops</a>
-                        </li>
-                        <li>
-                            <a href="#" onClick={showBusiness} className="category-links">Business</a>
-                        </li>
-                        <li>
-                            <a href="#" onClick={showHomeStudy} className="category-links">Home & study</a>
-                        </li>
-                    </ul>
                     <form>
-                        <hr/>
                         <input type="checkbox" name="New arrivals" value="New arrivals" ></input>
                         <label htmlFor="New arrivals"> New arrivals</label>
                         <br/>
@@ -152,18 +121,9 @@ export default function BrowseLaptops() {
                 
                 </div>
             </div>
-            <div className="show-more"><button>View more</button></div>
+                <div style={{textAlign: "center"}}>There are no more items to display</div>
             </div>
             <Footer/>
         </div>
     )
 }
-
-/*{laptops.map(laptop =>
-                    <div>
-                        <img src={laptop.image} alt={laptop.model}/>
-                        <div>{laptop.brand} {laptop.model}</div>
-                        <div>{laptop.cpu_family} with {laptop.memory}GB memory</div>
-                        <div>${laptop.price}</div>
-                        </div>
-                    )}*/

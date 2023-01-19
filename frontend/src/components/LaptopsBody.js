@@ -12,9 +12,9 @@ export default function LaptopsBody() {
             <div id="laptop-header">NZ's biggest range of laptops
             </div>
             <div className="card-block">
-                <CategoryCard image="/images/business-laptops.jpg" alt="Business laptops" category="Business laptops"/>
-                <CategoryCard image="/images/home-study-laptops.jpg" alt="Home & study laptops" category="Home & study laptops"/>
-                <Link to="/browse" style={{textDecoration:"none", color:"black"}}><CategoryCard image="/images/all-laptops.jpg" alt="All laptops" category="All laptops"/>
+                <Link to="/browse/business"><CategoryCard image="/images/business-laptops.jpg" alt="Business laptops" category="Business laptops"/></Link>
+                <Link to="/browse/home&study"><CategoryCard image="/images/home-study-laptops.jpg" alt="Home & study laptops" category="Home & study laptops"/></Link>
+                <Link to="/browse/all" style={{textDecoration:"none", color:"black"}}><CategoryCard image="/images/all-laptops.jpg" alt="All laptops" category="All laptops"/>
                 </Link>
            </div>
            <div className="help-block">

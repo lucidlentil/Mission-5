@@ -6,5 +6,15 @@
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.1",
     "node": "^19.3.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "Routes.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
