@@ -47,15 +47,14 @@
 
 .directory {
     font-size: 24px;
+    margin-left: 45px; 
 }
 
-#home:hover {
-    color: #f88119;
-    cursor: pointer;
-    transition: 0.2s ease;
+.parent {
+    text-decoration: none; 
+    color: black; 
 }
-
-#parent:hover {
+.parent:hover {
     color: #f88119;
     cursor: pointer;
     transition: 0.2s ease;
@@ -79,12 +78,39 @@
     flex-basis: 200px;
     font-weight: 500; 
 }
-.category-links {
-    text-decoration: none; 
 
+.check-boxes-text {
+    font-size: 20px; 
 }
+.check-boxes-text :hover {
+    color: black; 
+    cursor: default; 
+}
+
+.check-boxes {
+    color: #f88119; 
+    padding: 0px; 
+    margin: 0px; 
+    position: relative; 
+    top: 4px; 
+    font-size: 24px; 
+}
+
 .filter-header{
     font-size: 24px; 
+}
+.drop-down {
+    width: 173px; 
+    height: 30px; 
+    border: 2px solid #0D5178;
+}
+
+.slider {
+    width: 175px;
+    height: 30px; 
+}
+.star-rating {
+    color: #0D5178;
 }
 .products{
     display: flex; 
