@@ -9,8 +9,6 @@ const mongoose = require("mongoose");
 app.use(cors()); 
 app.use(express.json()); 
 
-//process.env.MONGO_URI
-
 //connect to mongoose
 async function connect() {
     try {

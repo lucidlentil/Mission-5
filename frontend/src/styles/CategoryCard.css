@@ -33,5 +33,6 @@
     font-size: 20px;
     }
 .link-button:hover {
+    transition: 0.2s ease;
     cursor: pointer; 
 }

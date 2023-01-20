@@ -16,7 +16,7 @@ export default function LaptopsBody() {
                 
            </div>
            <div className="help-block">
-                <div className="flex-1"></div>
+                <div className="flex-1"><img src="/images/cartoon-laptop.png" alt="A laptop" style={{width:"30%", margin:"0px", padding:"0px"}}/></div>
                 <div className="flex-1" id="help-header"><span style={{fontSize:"36px"}}>Need help</span><br/> choosing the right laptop? </div>
                 <div className="flex-1"><button id="help-button">VIEW OUR BUYING GUIDE</button></div>
            </div>

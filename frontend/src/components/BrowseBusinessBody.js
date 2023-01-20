@@ -28,12 +28,14 @@ export default function BrowseBusiness() {
 
     }
 
+    let starArray = [<AiFillStar/>, <AiFillStar/>, <AiFillStar/>, <AiFillStar/>,<AiFillStar/>];
+
     return (
         <div>
             <div className="buttons-bar"><Link to="/browse/all"><button className="category-buttons">ALL</button></Link> <button className="category-button-current">BUSINESS</button> <Link to="/browse/home&study"><button className="category-buttons">HOME & STUDY</button></Link></div>
             <div className="library-container">
                  <div className="directory">
-                    <span id="home">Home </span>&gt;<Link to="/" className="parent"> Computers & Tablets </Link>&gt;<Link to="/browse/all" className="parent"> Laptops </Link>&gt;<span className="child"> Business</span>
+                    <span className="home">Home </span>&gt;<span className="home"> Computers & Tablets </span>&gt;<Link to="/" className="parent"> Laptops </Link>&gt;<Link to="/browse/all" className="parent"> All </Link>&gt;<span className="child"> Business</span>
                 </div>
                 <div className="showing-items">Displaying 1-{laptopInfo.length} of 5 products</div>
             <div className="laptop-library">
@@ -98,7 +100,7 @@ export default function BrowseBusiness() {
                                 <div className="product-border">
                                 <img src={laptop.image} alt={laptop.model} className="product-image"/>
                                 <div className="laptop-description">{laptop.brand} {laptop.model}</div>
-                                <div>STARS GO HERE</div>
+                                <div style={{color:"#0B4F77", fontSize: "20px"}}>{starArray.slice(0, (laptop.customer_rating))}</div>
                                 <div className="laptop-description">{laptop.cpu_family} with {laptop.memory_size}GB memory</div>
                                 <div style={{fontSize: "24px", paddingTop:"10px", fontWeight:"500"}}>${laptop.price}<span style={{fontSize:"20px"}}>exGST</span></div>
                                 <div style={{textAlign: "left", paddingLeft:"5px", fontSize:"20px", color:"#EF8121", fontWeight:"bold"}}><AiOutlineHeart/></div>
