@@ -21,12 +21,12 @@ export default function LaptopsBody() {
                 <div className="flex-1"><button id="help-button">VIEW OUR BUYING GUIDE</button></div>
            </div>
            <div className="shop-by">
-                Shop by <br/>
+                Shop by
                 <br/>
-                <span className="shop-category">Offers</span>
-                <span className="shop-category">Brands</span>
-                <span className="shop-category">Most popular</span>
-                <span className="shop-category">Latest arrivals</span>
+                <span className="shop-category">Offers<br/><img src="/images/offers.png" alt="Some laptops" width="100%"/></span>
+                <span className="shop-category">Brands<br/><img src="/images/brand.png" alt="Brands" width="106%"/></span>
+                <span className="shop-category">Most popular<br/><img src="/images/most-popular.png" alt="Most popular" width="99%"/></span>
+                <span className="shop-category">Latest arrivals<br/><img src="/images/latest-arrivals.png" alt="Latest arrivals" width="85%"/></span>
            </div>
         </div>
     )
