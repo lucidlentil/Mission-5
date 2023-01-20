@@ -1,7 +1,5 @@
 import React from 'react'; 
 
-import {Link} from 'react-router-dom'; 
-
 import '../styles/LaptopsBody.css';
 
 import CategoryCard from './CategoryCard'; 
@@ -12,10 +10,10 @@ export default function LaptopsBody() {
             <div id="laptop-header">NZ's biggest range of laptops
             </div>
             <div className="card-block">
-                <Link to="/browse/business"><CategoryCard image="/images/business-laptops.jpg" alt="Business laptops" category="Business laptops"/></Link>
-                <Link to="/browse/home&study"><CategoryCard image="/images/home-study-laptops.jpg" alt="Home & study laptops" category="Home & study laptops"/></Link>
-                <Link to="/browse/all" style={{textDecoration:"none", color:"black"}}><CategoryCard image="/images/all-laptops.jpg" alt="All laptops" category="All laptops"/>
-                </Link>
+                <CategoryCard image="/images/business-laptops.png" alt="Business laptops" category="Business" link="/browse/business"/>
+                <CategoryCard image="/images/home-laptops.png" alt="Home & study laptops" category="Home & study" link="/browse/home&study"/>
+                <CategoryCard image="/images/all-laptops.png" alt="All laptops" category="All" link="/browse/all"/>
+                
            </div>
            <div className="help-block">
                 <div className="flex-1"></div>

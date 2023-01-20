@@ -3,8 +3,11 @@
     text-align: center;
     width: 399px;
     height: 320px;
-    background-color: #D0CFCF;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: solid;
+    border-radius: 3px;
+    border-color: #EF8121;
 }
 
 .card-img {
@@ -17,4 +20,18 @@
 .laptop-category {
     padding: 20px;
     font-size: 24px;
+}
+.link-button {
+    width: 240px;
+    height: 38px;
+    color: white; 
+    font-family: 'Anek Malayalam', sans-serif;
+    border-radius: 10px;
+    border: 2.3px solid #EF8122;
+    background-color: #EF8122;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    }
+.link-button:hover {
+    cursor: pointer; 
 }
